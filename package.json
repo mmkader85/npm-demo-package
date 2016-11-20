@@ -1,0 +1,19 @@
+{
+  "name": "npm-demo-package",
+  "version": "1.0.0",
+  "description": "This is a demo package only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmkader85/npm-demo-package.git"
+  },
+  "author": "Muhammed Abdul Kader <mmkader85@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmkader85/npm-demo-package/issues"
+  },
+  "homepage": "https://github.com/mmkader85/npm-demo-package#readme"
+}
