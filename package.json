@@ -1,5 +1,5 @@
 {
-  "name": "@mmkader85/npm-demo-package",
+  "name": "mmkader85-npm-demo-package",
   "version": "1.0.0",
   "description": "This is a demo package only",
   "main": "index.js",
