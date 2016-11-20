@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/var/www/npm-demo-package',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/muhammed/.npm correctMkdir not in flight; initializing
+10 info lifecycle @mmkader85/npm-demo-package@1.0.0~prepublish: @mmkader85/npm-demo-package@1.0.0
+11 silly lifecycle @mmkader85/npm-demo-package@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package.tgz',
+12 verbose tar pack   '/var/www/npm-demo-package' ]
+13 verbose tarball /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package.tgz
+14 verbose folder /var/www/npm-demo-package
+15 verbose addLocalTarball adding from inside cache /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package.tgz
+16 verbose correctMkdir /home/muhammed/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @mmkader85/npm-demo-package@1.0.0
+18 verbose afterAdd /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/muhammed/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package/package.json written
+21 silly publish { name: '@mmkader85/npm-demo-package',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'This is a demo package only',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mmkader85/npm-demo-package.git' },
+21 silly publish   author: { name: 'Muhammed Abdul Kader', email: 'mmkader85@gmail.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/mmkader85/npm-demo-package/issues' },
+21 silly publish   homepage: 'https://github.com/mmkader85/npm-demo-package#readme',
+21 silly publish   readme: '# npm-demo-package',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '3e2bc24007d00b3912390067582666904decb836',
+21 silly publish   _id: '@mmkader85/npm-demo-package@1.0.0',
+21 silly publish   _shasum: '001a3a90ae217c5f1008f52782ecea80f0d93a3e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @mmkader85/npm-demo-package
+24 silly mapToRegistry scope (from package name) @mmkader85
+25 verbose mapToRegistry no registry URL found in name for scope @mmkader85
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@mmkader85/npm-demo-package',
+28 silly mapToRegistry   scope: '@mmkader85',
+28 silly mapToRegistry   escapedName: '@mmkader85%2fnpm-demo-package',
+28 silly mapToRegistry   name: '@mmkader85/npm-demo-package',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@mmkader85%2fnpm-demo-package
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /home/muhammed/.npm/@mmkader85/npm-demo-package/1.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@mmkader85%2fnpm-demo-package
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 7:08:20 AM
+35 verbose request using bearer token for auth
+36 verbose request id 45ec6c262b1f462c
+37 http request PUT https://registry.npmjs.org/@mmkader85%2fnpm-demo-package
+38 http 403 https://registry.npmjs.org/@mmkader85%2fnpm-demo-package
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sun, 20 Nov 2016 23:08:21 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1479683300.441228,VS0,VE905' }
+40 verbose request invalidating /home/muhammed/.npm/registry.npmjs.org/_40mmkader85_252fnpm-demo-package on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : @mmkader85/npm-demo-package
+42 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:965:12)
+43 verbose statusCode 403
+44 verbose pkgid @mmkader85/npm-demo-package
+45 verbose cwd /var/www/npm-demo-package
+46 error Linux 4.4.0-47-generic
+47 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish" "--access=public"
+48 error node v6.9.1
+49 error npm  v3.10.8
+50 error code E403
+51 error "You cannot publish over the previously published version 1.0.0." : @mmkader85/npm-demo-package
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
